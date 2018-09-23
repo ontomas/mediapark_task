@@ -1,0 +1,904 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*GLOBAL*/
+.section-name {
+  padding: 60px 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #4a4846;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+::-webkit-input-placeholder {
+  color: #aca59d;
+}
+
+:-ms-input-placeholder {
+  color: #aca59d;
+}
+
+::-ms-input-placeholder {
+  color: #aca59d;
+}
+
+::placeholder {
+  color: #aca59d;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*MAIN*/
+body {
+  background-color: #f7f3ec;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+body header {
+  width: 100%;
+  background-color: #463c2f;
+  -webkit-box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+}
+
+body header #logo {
+  padding: 20px 0;
+  float: left;
+}
+
+body header #logo a {
+  font-size: 1.8em;
+  color: #f5f5f5;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000000;
+  text-transform: uppercase;
+}
+
+body header #main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+body header #main-nav ul li {
+  float: left;
+}
+
+@media (max-width: 768px) {
+  body header #main-nav ul li {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+body header #main-nav ul li a {
+  font-size: 0.8em;
+  display: block;
+  color: #afa9a3;
+  text-align: center;
+  padding: 20px 0 20px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  body header #main-nav ul li a {
+    padding: 20px 9px;
+  }
+}
+
+body header #main-nav ul li a.active, body header #main-nav ul li a:hover {
+  color: #f5f5f5;
+}
+
+body main #showcase {
+  height: 900px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  body main #showcase {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 414px) {
+  body main #showcase {
+    height: 1100px;
+  }
+}
+
+body main #showcase #slider-nav {
+  position: absolute;
+  top: 170px;
+  left: 11%;
+  z-index: 1;
+}
+
+body main #showcase #slider-nav #left-arrow {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 3px;
+  background: #fff;
+  border: none;
+}
+
+body main #showcase #slider-nav #right-arrow {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 3px;
+  background: #fff;
+  border: none;
+}
+
+body main #showcase .background-right.active {
+  display: block;
+}
+
+body main #showcase .background-right {
+  background: #584b3b;
+  height: 570px;
+  position: absolute;
+  width: 85%;
+  margin: 0 0 0 15%;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body main #showcase .background-right {
+    height: 1000px;
+  }
+}
+
+@media (max-width: 414px) {
+  body main #showcase .background-right {
+    height: 860px;
+  }
+}
+
+body main #showcase .background-right .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  position: relative;
+  margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  body main #showcase .background-right .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+body main #showcase .background-right .container img {
+  max-width: 80%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body main #showcase .background-right .container .content {
+    padding-top: 20px;
+  }
+}
+
+body main #showcase .background-right .container .content h3 {
+  color: #c8c1b7;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+body main #showcase .background-right .container .content p {
+  color: #c8c1b7;
+  padding: 10px 0;
+}
+
+body main #showcase .background-right .container .content button {
+  background: transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #c8c1b7;
+  border: 1px solid #c8c1b7;
+  cursor: pointer;
+}
+
+body main #showcase .background-right .container .content button i {
+  padding: 0 10px 0 0;
+}
+
+body main #showcase .background-right .sideway {
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 0.7em;
+  padding: 0px 0;
+  padding: 160px 0;
+  position: absolute;
+  left: -80px;
+}
+
+@media (max-width: 768px) {
+  body main #showcase .background-right .sideway {
+    left: -40px;
+  }
+}
+
+body main #location {
+  background-color: #ece2d1;
+  height: 880px;
+}
+
+@media (max-width: 768px) {
+  body main #location {
+    height: 1350px;
+  }
+}
+
+body main #location .background {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 42% 58%;
+      grid-template-columns: 42% 58%;
+}
+
+@media (max-width: 768px) {
+  body main #location .background {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+body main #location .background .navigation {
+  float: left;
+  background: #f7f3ec;
+  -webkit-box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+body main #location .background .navigation .loc-nav {
+  background-color: #584b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main #location .background .navigation .loc-nav section {
+  display: none;
+  padding: 50px;
+  border-top: 1px solid #ddd;
+  background: #f7f3ec;
+  width: 100%;
+}
+
+body main #location .background .navigation .loc-nav #content1 h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+body main #location .background .navigation .loc-nav #content1 ul {
+  list-style-type: none;
+}
+
+body main #location .background .navigation .loc-nav #content1 ul li {
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+body main #location .background .navigation .loc-nav #content1 ul .one {
+  float: left;
+  text-align: left;
+}
+
+body main #location .background .navigation .loc-nav #content1 ul .two {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+body main #location .background .navigation .loc-nav #content2 h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+body main #location .background .navigation .loc-nav #content2 ul {
+  list-style-type: none;
+}
+
+body main #location .background .navigation .loc-nav #content2 ul li {
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+body main #location .background .navigation .loc-nav #content2 ul .one {
+  float: left;
+  text-align: left;
+}
+
+body main #location .background .navigation .loc-nav #content2 ul .two {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+body main #location .background .navigation .loc-nav #content3 h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+body main #location .background .navigation .loc-nav #content3 ul {
+  list-style-type: none;
+}
+
+body main #location .background .navigation .loc-nav #content3 ul li {
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+body main #location .background .navigation .loc-nav #content3 ul .one {
+  float: left;
+  text-align: left;
+}
+
+body main #location .background .navigation .loc-nav #content3 ul .two {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+body main #location .background .navigation .loc-nav #content4 h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+body main #location .background .navigation .loc-nav #content4 ul {
+  list-style-type: none;
+}
+
+body main #location .background .navigation .loc-nav #content4 ul li {
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+body main #location .background .navigation .loc-nav #content4 ul .one {
+  float: left;
+  text-align: left;
+}
+
+body main #location .background .navigation .loc-nav #content4 ul .two {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+body main #location .background .navigation .loc-nav #content5 h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+body main #location .background .navigation .loc-nav #content5 ul {
+  list-style-type: none;
+}
+
+body main #location .background .navigation .loc-nav #content5 ul li {
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+body main #location .background .navigation .loc-nav #content5 ul .one {
+  float: left;
+  text-align: left;
+}
+
+body main #location .background .navigation .loc-nav #content5 ul .two {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+body main #location .background .navigation .loc-nav #content6 h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+body main #location .background .navigation .loc-nav #content6 ul {
+  list-style-type: none;
+}
+
+body main #location .background .navigation .loc-nav #content6 ul li {
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+body main #location .background .navigation .loc-nav #content6 ul .one {
+  float: left;
+  text-align: left;
+}
+
+body main #location .background .navigation .loc-nav #content6 ul .two {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+body main #location .background .navigation .loc-nav #content7 h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+body main #location .background .navigation .loc-nav #content7 ul {
+  list-style-type: none;
+}
+
+body main #location .background .navigation .loc-nav #content7 ul li {
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+body main #location .background .navigation .loc-nav #content7 ul .one {
+  float: left;
+  text-align: left;
+}
+
+body main #location .background .navigation .loc-nav #content7 ul .two {
+  float: right;
+  text-align: right;
+  font-weight: bold;
+}
+
+body main #location .background .navigation .loc-nav input {
+  display: none;
+}
+
+body main #location .background .navigation .loc-nav label {
+  display: inline-block;
+  padding: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  width: 14.27%;
+}
+
+@media (max-width: 768px) {
+  body main #location .background .navigation .loc-nav label {
+    padding: 10px;
+  }
+}
+
+body main #location .background .navigation .loc-nav label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  font-size: 1.4em;
+  color: #f7f3ec;
+}
+
+body main #location .background .navigation .loc-nav label[for*='1']:before {
+  content: '\f07a';
+}
+
+body main #location .background .navigation .loc-nav label[for*='2']:before {
+  content: '\f02d';
+}
+
+body main #location .background .navigation .loc-nav label[for*='3']:before {
+  content: '\f0fd';
+}
+
+body main #location .background .navigation .loc-nav label[for*='4']:before {
+  content: '\f1ae';
+}
+
+body main #location .background .navigation .loc-nav label[for*='5']:before {
+  content: '\f1e3';
+}
+
+body main #location .background .navigation .loc-nav label[for*='6']:before {
+  content: '\f09d';
+}
+
+body main #location .background .navigation .loc-nav label[for*='7']:before {
+  content: '\f277';
+}
+
+body main #location .background .navigation .loc-nav input:checked + label, body main #location .background .navigation .loc-nav label:hover {
+  background: #9eb46a;
+  border: none;
+  cursor: pointer;
+}
+
+body main #location .background .navigation .loc-nav #tab1:checked ~ #content1,
+body main #location .background .navigation .loc-nav #tab2:checked ~ #content2,
+body main #location .background .navigation .loc-nav #tab3:checked ~ #content3,
+body main #location .background .navigation .loc-nav #tab4:checked ~ #content4,
+body main #location .background .navigation .loc-nav #tab5:checked ~ #content5,
+body main #location .background .navigation .loc-nav #tab6:checked ~ #content6,
+body main #location .background .navigation .loc-nav #tab7:checked ~ #content7 {
+  display: block;
+}
+
+body main #location .background iframe {
+  width: 100%;
+  height: 610px;
+  border: none;
+}
+
+body main #about {
+  height: 750px;
+  background-image: url("../img/bokeh-city-dark-9044.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+body main #about .logo-row {
+  float: right;
+  padding: 20px;
+}
+
+body main #about .logo-row a {
+  font-size: 1.8em;
+  color: #f5f5f5;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000000;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+body main #about .about-content {
+  clear: both;
+  width: 60%;
+  margin: auto;
+  padding: 250px 0;
+}
+
+@media (max-width: 768px) {
+  body main #about .about-content {
+    padding: 150px 0;
+  }
+}
+
+body main #about .about-content a {
+  font-size: 1.8em;
+  color: yellow;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000000;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+body main #about .about-content h2 {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+}
+
+body main #about .about-content p {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body main #about .about-content p {
+    padding: 10px 0;
+  }
+}
+
+body main #contacts {
+  height: 870px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  body main #contacts {
+    height: 1800px;
+  }
+}
+
+@media (max-width: 414px) {
+  body main #contacts {
+    height: 1500px;
+  }
+}
+
+body main #contacts .background-left {
+  background-color: #ece2d1;
+  height: 600px;
+  position: absolute;
+  width: 85%;
+  margin: 60px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left {
+    height: 1670px;
+  }
+}
+
+@media (max-width: 414px) {
+  body main #contacts .background-left {
+    height: 1350px;
+  }
+}
+
+body main #contacts .background-left .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 27.5% 27.5% 45%;
+      grid-template-columns: 27.5% 27.5% 45%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  body main #contacts .background-left .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+body main #contacts .background-left .container .card1 {
+  display: inline-block;
+  padding: 10px;
+}
+
+body main #contacts .background-left .container .card1 p {
+  margin: 0;
+  color: #8b8278;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left .container .card1 p {
+    padding: 0 10px;
+  }
+}
+
+body main #contacts .background-left .container .card1 .work {
+  padding-bottom: 8px;
+}
+
+body main #contacts .background-left .container .card1 .fas {
+  padding: 8px 0;
+}
+
+body main #contacts .background-left .container .card1 .name {
+  color: #353432;
+  font-weight: 600;
+}
+
+body main #contacts .background-left .container .card1 h2 {
+  margin-top: 80px;
+}
+
+body main #contacts .background-left .container .card1 img {
+  margin: 35px 0px;
+  -webkit-box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left .container .card1 img {
+    width: 70%;
+  }
+}
+
+body main #contacts .background-left .container .card2 {
+  display: inline-block;
+  padding: 10px;
+}
+
+body main #contacts .background-left .container .card2 p {
+  margin: 0;
+  color: #8b8278;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left .container .card2 p {
+    padding: 0 10px;
+  }
+}
+
+body main #contacts .background-left .container .card2 .work {
+  padding-bottom: 8px;
+}
+
+body main #contacts .background-left .container .card2 .fas {
+  padding: 8px 0;
+}
+
+body main #contacts .background-left .container .card2 .name {
+  color: #353432;
+  font-weight: 600;
+}
+
+body main #contacts .background-left .container .card2 img {
+  margin-top: 140px;
+  margin-bottom: 35px;
+  -webkit-box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left .container .card2 img {
+    margin-top: 35px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 414px) {
+  body main #contacts .background-left .container .card2 img {
+    margin-top: 35px;
+  }
+}
+
+body main #contacts .background-left .container .form {
+  height: 600px;
+  margin: 50px 20px 20px 20px;
+  background: #584b3b;
+  display: block;
+  padding: 50px 60px;
+  -webkit-box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left .container .form {
+    margin: 10px;
+    padding: 30px;
+    height: 460px;
+  }
+}
+
+body main #contacts .background-left .container .form h3 {
+  font-size: 0.9em;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+body main #contacts .background-left .container .form #contactForm input {
+  padding: 10px 10px;
+  margin: 30px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #716658;
+  background: transparent;
+  color: #aca59d;
+}
+
+body main #contacts .background-left .container .form button {
+  background: #879f55;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  -webkit-box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+body main #contacts .background-left .sideway {
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  -webkit-transform: rotate(180deg);
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 0.7em;
+  padding: 0px 0;
+  padding: 170px 0;
+  position: absolute;
+  right: -60px;
+}
+
+@media (max-width: 768px) {
+  body main #contacts .background-left .sideway {
+    right: -40px;
+  }
+}
+
+body footer {
+  background-color: #302d28;
+  width: 100%;
+}
+
+body footer a {
+  float: left;
+  font-size: 1.8em;
+  color: #afa9a3;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000000;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+@media (max-width: 414px) {
+  body footer a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+body footer p {
+  float: right;
+  color: #afa9a3;
+  padding: 20px 0;
+}
+
+@media (max-width: 414px) {
+  body footer p {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

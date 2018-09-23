@@ -1,0 +1,854 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$colors: (
+    background: #f7f3ec,
+    header: #463c2f,
+    footer: #302d28,
+    primary: #584b3b,
+    primary-light: #ece2d1,
+    click: #879f55,
+    text-dark: #4a4846,
+    text-light: #f5f5f5,
+    text-content: #c8c1b7,
+    element-background: #584b3b
+);
+
+$text-shadow: 1px 1px 2px #000000;
+$box-shadow: 4px 4px 20px -2px rgba(0,0,0,0.75);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$mobile: 414px;
+$tablet: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+/*GLOBAL*/
+.section-name {
+    padding: 60px 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: color(text-dark);
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    width:80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+::placeholder {
+    color: #aca59d;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MAIN*/
+body {
+    background-color: color(background);
+	color: color(text);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+    margin:0;
+    
+    header {
+        width: 100%;
+        background-color: color(header);
+        box-shadow: $box-shadow;
+
+        #logo {
+            padding: 20px 0;
+            float: left;
+
+            a {
+                font-size: 1.8em;
+                color: color(text-light);
+                text-decoration: none;
+                text-shadow: $text-shadow;
+                text-transform: uppercase;
+            }
+        }
+
+        #main-nav {
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                float: right;
+                
+
+                li {
+                    float: left;
+
+                    @include tablet {
+                        display: inline-block;
+                        width: 100%;
+                    }
+
+                    a {
+                        font-size: 0.8em;
+                        display: block;
+                        color: #afa9a3;
+                        text-align: center;
+                        padding: 20px 0 20px 40px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        @include tablet {
+                            padding: 20px 9px;
+                        }
+                    }
+
+                    a.active, a:hover {
+                        color: #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        #showcase {
+            height: 900px;
+            position: relative;
+
+            @include tablet {
+                height: 1200px;
+            }
+
+            @include mobile {
+                height: 1100px;
+            }
+
+            #slider-nav {
+                position: absolute;
+                top: 170px;
+                left: 11%;
+                z-index: 1;
+
+                #left-arrow {
+                    font-size: 22px;
+                    cursor: pointer;
+                    padding: 15px 20px;
+                    border-radius: 3px;
+                    background: #fff;
+                    border: none;
+                }
+    
+                #right-arrow {
+                    font-size: 22px;
+                    cursor: pointer;
+                    padding: 15px 20px;
+                    border-radius: 3px;
+                    background: #fff;
+                    border: none;
+                }
+            }
+
+            .background-right.active {
+                display: block;
+            }
+                
+            .background-right {
+                background: color(element-background);
+                height: 570px;
+                position: absolute;
+                width: 85%;
+                margin: 0 0 0 15%;
+                display: none;
+
+                @include tablet {
+                    height: 1000px;
+                }
+
+                @include mobile {
+                    height: 860px;
+                }
+
+                .container {
+                    display: grid;
+                    grid-template-columns: 55% 45%;
+                    position: relative;
+                    margin-top: 90px;
+
+                    @include tablet {
+                        grid-template-columns: 100%;
+                    }
+        
+                    img {
+                        max-width: 80%;
+                        height: auto;
+                    }
+                    .content {
+                        @include tablet {
+                            padding-top: 20px;
+                        }
+
+                        h3 {
+                            color: color(text-content);
+                            text-transform: uppercase;
+                            font-weight:600;
+                            font-size: 1.5em;
+                        }
+
+                        p {
+                            color: color(text-content);
+                            padding: 10px 0;
+                        }
+
+                        button {
+                            background: transparent;
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                            text-transform: uppercase;
+                            color: color(text-content);
+                            border: 1px solid color(text-content);
+                            cursor: pointer;
+
+                            i {
+                                padding: 0 10px 0 0;
+                            }
+                        }
+                
+                    }
+                }
+
+                .sideway {
+                    writing-mode:tb-rl;
+                    -webkit-transform: rotate(180deg);
+                    text-transform: uppercase;
+                    color: black;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    font-size: 0.7em;
+                    padding: 0px 0;
+                    padding: 160px 0;
+                    position: absolute;
+                    left: -80px;
+
+                    @include tablet {
+                        left: -40px;
+                    }
+                }
+            }
+            
+        }
+        #location {
+            background-color: #ece2d1;
+            height: 880px;
+
+            @include tablet {
+                height: 1350px;
+            }
+
+            .background {
+                display: grid;
+                grid-template-columns: 42% 58%;
+
+                @include tablet {
+                    grid-template-columns: 100%;
+                }
+
+                .navigation {
+                    float: left;
+                    background: #f7f3ec;
+                    box-shadow: $box-shadow;
+                    z-index: 1;
+    
+                    .loc-nav {
+                        background-color: #584b3b;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: center;
+
+                        section {
+                            display: none;
+                            padding: 50px;
+                            border-top: 1px solid #ddd;
+                            background: #f7f3ec;
+                            width: 100%;
+                        }
+
+                        #content1 {
+                            h3 {
+                                text-transform: uppercase;
+                                font-size: 1em;
+                                font-weight: 800;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                
+                                li {
+                                    
+                                    padding: 20px 0 40px 0;
+                                    border-bottom: 1px solid black;
+                                }
+
+                                .one {
+                                    float: left;
+                                    text-align: left;
+                                    
+                                }
+                                .two {
+                                    float: right;
+                                    text-align: right;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        #content2 {
+                            h3 {
+                                text-transform: uppercase;
+                                font-size: 1em;
+                                font-weight: 800;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                
+                                li {
+                                    
+                                    padding: 20px 0 40px 0;
+                                    border-bottom: 1px solid black;
+                                }
+
+                                .one {
+                                    float: left;
+                                    text-align: left;
+                                    
+                                }
+                                .two {
+                                    float: right;
+                                    text-align: right;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        #content3 {
+                            h3 {
+                                text-transform: uppercase;
+                                font-size: 1em;
+                                font-weight: 800;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                
+                                li {
+                                    
+                                    padding: 20px 0 40px 0;
+                                    border-bottom: 1px solid black;
+                                }
+
+                                .one {
+                                    float: left;
+                                    text-align: left;
+                                    
+                                }
+                                .two {
+                                    float: right;
+                                    text-align: right;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        #content4 {
+                            h3 {
+                                text-transform: uppercase;
+                                font-size: 1em;
+                                font-weight: 800;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                
+                                li {
+                                    
+                                    padding: 20px 0 40px 0;
+                                    border-bottom: 1px solid black;
+                                }
+
+                                .one {
+                                    float: left;
+                                    text-align: left;
+                                    
+                                }
+                                .two {
+                                    float: right;
+                                    text-align: right;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        #content5 {
+                            h3 {
+                                text-transform: uppercase;
+                                font-size: 1em;
+                                font-weight: 800;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                
+                                li {
+                                    
+                                    padding: 20px 0 40px 0;
+                                    border-bottom: 1px solid black;
+                                }
+
+                                .one {
+                                    float: left;
+                                    text-align: left;
+                                    
+                                }
+                                .two {
+                                    float: right;
+                                    text-align: right;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        #content6 {
+                            h3 {
+                                text-transform: uppercase;
+                                font-size: 1em;
+                                font-weight: 800;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                
+                                li {
+                                    
+                                    padding: 20px 0 40px 0;
+                                    border-bottom: 1px solid black;
+                                }
+
+                                .one {
+                                    float: left;
+                                    text-align: left;
+                                    
+                                }
+                                .two {
+                                    float: right;
+                                    text-align: right;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        #content7 {
+                            h3 {
+                                text-transform: uppercase;
+                                font-size: 1em;
+                                font-weight: 800;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                list-style-type: none;
+                                
+                                li {
+                                    
+                                    padding: 20px 0 40px 0;
+                                    border-bottom: 1px solid black;
+                                }
+
+                                .one {
+                                    float: left;
+                                    text-align: left;
+                                    
+                                }
+                                .two {
+                                    float: right;
+                                    text-align: right;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                          
+                        input {
+                            display: none;
+                        }
+                          
+                        label {
+                            display: inline-block;
+                            padding: 15px;
+                            font-weight: 600;
+                            text-align: center;
+                            color: #bbb;
+                            width: 14.27%;
+
+                            @include tablet {
+                                padding: 10px;
+                            }
+                        }
+                          
+                        label:before {
+                            font-family: fontawesome;
+                            font-weight: normal;
+                            font-size: 1.4em;
+                            color: #f7f3ec;
+                        }
+                          
+                        label[for*='1']:before { content: '\f07a'; }
+                        label[for*='2']:before { content: '\f02d'; }
+                        label[for*='3']:before { content: '\f0fd'; }
+                        label[for*='4']:before { content: '\f1ae'; }
+                        label[for*='5']:before { content: '\f1e3'; }
+                        label[for*='6']:before { content: '\f09d'; }
+                        label[for*='7']:before { content: '\f277'; }
+                          
+                        input:checked + label, label:hover {
+                            background: #9eb46a;
+                            border: none;
+                            cursor: pointer;
+                        }
+                          
+                        #tab1:checked ~ #content1,
+                        #tab2:checked ~ #content2,
+                        #tab3:checked ~ #content3,
+                        #tab4:checked ~ #content4,
+                        #tab5:checked ~ #content5,
+                        #tab6:checked ~ #content6,
+                        #tab7:checked ~ #content7 {
+                            display: block;
+                        }
+                    }
+    
+                }  
+
+                iframe {
+                    width: 100%;
+                    height: 610px;
+                    border: none;
+                }
+            }
+        }
+
+        #about {
+            height: 750px;
+            background-image: url("../img/bokeh-city-dark-9044.jpg");
+            background-position: center;
+            background-size: cover;
+
+            .logo-row {
+                float: right;
+                padding: 20px;
+
+                a {
+                    font-size: 1.8em;
+                    color: color(text-light);
+                    text-decoration: none;
+                    text-shadow: $text-shadow;
+                    text-transform: uppercase;
+                    padding: 10px;
+                }
+            }
+
+            .about-content {
+                clear: both;
+                width: 60%;
+                margin: auto;
+                padding: 250px 0;
+
+                @include tablet {
+                    padding: 150px 0;
+                }
+
+                a {
+                    font-size: 1.8em;
+                    color: yellow;
+                    text-decoration: none;
+                    text-shadow: $text-shadow;
+                    text-transform: uppercase;
+                    padding: 10px;
+                }
+
+                h2 {
+                    color: white;
+                    font-weight: 200;
+                    text-align: center;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+
+                    @include tablet {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+
+        #contacts {
+            height: 870px;
+            position: relative;
+
+
+            @include tablet {
+                height: 1800px;
+            }
+            @include mobile {
+                height: 1500px;
+            }
+                
+            .background-left {
+                background-color: #ece2d1;
+                height: 600px;
+                position: absolute;
+                width: 85%;
+                margin: 60px 0 0 0;
+
+                @include tablet {
+                    height: 1670px;
+                }
+                @include mobile {
+                    height: 1350px;
+                }
+
+                .container {
+                    display: grid;
+                    grid-template-columns: 27.5% 27.5% 45%;
+                    position: relative;
+
+                    @include tablet {
+                        grid-template-columns: 100%;
+                    }
+
+                    @include mobile {
+                        grid-template-columns: 100%;
+                    }
+
+                    .card1 {
+                        display: inline-block;
+                        padding: 10px;
+
+                        p {
+                            margin: 0;
+                            color: #8b8278; 
+
+                            @include tablet {
+                                padding: 0 10px;
+                            }
+                        }
+
+                        .work {
+                            padding-bottom: 8px;
+                        }
+
+                        .fas {
+                            padding: 8px 0;
+                        }
+
+                        .name {
+                            color: #353432;
+                            font-weight: 600;
+                        }
+
+                        h2 {
+                            margin-top: 80px;
+                        }
+
+                        img {
+                            margin: 35px 0px;
+                            box-shadow: $box-shadow;
+                            max-width: 100%;
+                            height: auto;
+
+                            @include tablet {
+                                width: 70%;
+                            }
+                        }
+                    }
+    
+                    .card2 {
+                        display: inline-block;
+                        padding: 10px;
+
+                        p {
+                            margin: 0;
+                            color: #8b8278;
+
+                            @include tablet {
+                                padding: 0 10px;
+                            }
+                        }
+
+                        .work {
+                            padding-bottom: 8px;
+                        }
+
+                        .fas {
+                            padding: 8px 0;
+                        }
+
+                        .name {
+                            color: #353432;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            margin-top:140px;
+                            margin-bottom: 35px;
+                            box-shadow: $box-shadow;
+                            max-width: 100%;
+                            height: auto;
+
+                            @include tablet {
+                                margin-top:35px;
+                                width: 70%;
+                            }
+                            @include mobile {
+                                margin-top:35px;
+                            }
+
+                        }
+                    }
+    
+                    .form {
+                        height: 600px;
+                        margin: 50px 20px 20px 20px;
+                        background: color(element-background); 
+                        display: block;
+                        padding: 50px 60px;
+                        box-shadow: $box-shadow;
+                        width: 90%;
+
+                        @include tablet {
+                            margin: 10px;
+                            padding: 30px;
+                            height: 460px;
+                        }
+
+                        h3 {
+                            font-size: 0.9em;
+                            color: #FFF;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding-bottom: 10px;
+                        }
+
+                        #contactForm {
+                            input {
+                                padding: 10px 10px;
+                                margin: 30px 0;
+                                width: 100%;
+                                border: none;
+                                border-bottom: 1px solid #716658;
+                                background: transparent;
+                                color: #aca59d;
+                            }
+                        }
+
+                        button {
+                            background: color(click);
+                            border-radius: 5px;
+                            padding: 10px 20px;
+                            text-transform: uppercase;
+                            color: #fff;
+                            border: none;
+                            margin-top: 10px;
+                            box-shadow: $box-shadow;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+
+                .sideway {
+                    writing-mode:tb-rl;
+                    -webkit-transform: rotate(180deg);
+                    text-transform: uppercase;
+                    color: black;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    font-size: 0.7em;
+                    padding: 0px 0;
+                    padding: 170px 0;
+                    position: absolute;
+                    right: -60px;
+
+                    @include tablet {
+                        right: -40px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: color(footer);
+        width: 100%;
+
+        a {
+            float: left;
+            font-size: 1.8em;
+            color: #afa9a3;
+            text-decoration: none;
+            text-shadow: $text-shadow;
+            text-transform: uppercase;
+            padding: 20px 0;
+
+            @include mobile {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        p {
+            float: right;
+            color: #afa9a3;
+            padding: 20px 0;
+
+            @include mobile {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
