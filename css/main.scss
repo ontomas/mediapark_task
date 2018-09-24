@@ -246,7 +246,7 @@ body {
                     writing-mode:tb-rl;
                     -webkit-transform: rotate(180deg);
                     text-transform: uppercase;
-                    color: black;
+                    color: #000;
                     font-weight: 500;
                     letter-spacing: 2px;
                     font-size: 0.7em;
@@ -298,7 +298,7 @@ body {
                             width: 100%;
                         }
 
-                        #content1 {
+                        #content1, #content2, #content3, #content4, #content5, #content6, #content7 {
                             h3 {
                                 text-transform: uppercase;
                                 font-size: 1em;
@@ -312,7 +312,7 @@ body {
                                 li {
                                     
                                     padding: 20px 0 40px 0;
-                                    border-bottom: 1px solid black;
+                                    border-bottom: 1px solid #000;
                                 }
 
                                 .one {
@@ -328,186 +328,6 @@ body {
                             }
                         }
 
-                        #content2 {
-                            h3 {
-                                text-transform: uppercase;
-                                font-size: 1em;
-                                font-weight: 800;
-                                letter-spacing: 1px;
-                            }
-
-                            ul {
-                                list-style-type: none;
-                                
-                                li {
-                                    
-                                    padding: 20px 0 40px 0;
-                                    border-bottom: 1px solid black;
-                                }
-
-                                .one {
-                                    float: left;
-                                    text-align: left;
-                                    
-                                }
-                                .two {
-                                    float: right;
-                                    text-align: right;
-                                    font-weight: bold;
-                                }
-                            }
-                        }
-
-                        #content3 {
-                            h3 {
-                                text-transform: uppercase;
-                                font-size: 1em;
-                                font-weight: 800;
-                                letter-spacing: 1px;
-                            }
-
-                            ul {
-                                list-style-type: none;
-                                
-                                li {
-                                    
-                                    padding: 20px 0 40px 0;
-                                    border-bottom: 1px solid black;
-                                }
-
-                                .one {
-                                    float: left;
-                                    text-align: left;
-                                    
-                                }
-                                .two {
-                                    float: right;
-                                    text-align: right;
-                                    font-weight: bold;
-                                }
-                            }
-                        }
-
-                        #content4 {
-                            h3 {
-                                text-transform: uppercase;
-                                font-size: 1em;
-                                font-weight: 800;
-                                letter-spacing: 1px;
-                            }
-
-                            ul {
-                                list-style-type: none;
-                                
-                                li {
-                                    
-                                    padding: 20px 0 40px 0;
-                                    border-bottom: 1px solid black;
-                                }
-
-                                .one {
-                                    float: left;
-                                    text-align: left;
-                                    
-                                }
-                                .two {
-                                    float: right;
-                                    text-align: right;
-                                    font-weight: bold;
-                                }
-                            }
-                        }
-
-                        #content5 {
-                            h3 {
-                                text-transform: uppercase;
-                                font-size: 1em;
-                                font-weight: 800;
-                                letter-spacing: 1px;
-                            }
-
-                            ul {
-                                list-style-type: none;
-                                
-                                li {
-                                    
-                                    padding: 20px 0 40px 0;
-                                    border-bottom: 1px solid black;
-                                }
-
-                                .one {
-                                    float: left;
-                                    text-align: left;
-                                    
-                                }
-                                .two {
-                                    float: right;
-                                    text-align: right;
-                                    font-weight: bold;
-                                }
-                            }
-                        }
-
-                        #content6 {
-                            h3 {
-                                text-transform: uppercase;
-                                font-size: 1em;
-                                font-weight: 800;
-                                letter-spacing: 1px;
-                            }
-
-                            ul {
-                                list-style-type: none;
-                                
-                                li {
-                                    
-                                    padding: 20px 0 40px 0;
-                                    border-bottom: 1px solid black;
-                                }
-
-                                .one {
-                                    float: left;
-                                    text-align: left;
-                                    
-                                }
-                                .two {
-                                    float: right;
-                                    text-align: right;
-                                    font-weight: bold;
-                                }
-                            }
-                        }
-
-                        #content7 {
-                            h3 {
-                                text-transform: uppercase;
-                                font-size: 1em;
-                                font-weight: 800;
-                                letter-spacing: 1px;
-                            }
-
-                            ul {
-                                list-style-type: none;
-                                
-                                li {
-                                    
-                                    padding: 20px 0 40px 0;
-                                    border-bottom: 1px solid black;
-                                }
-
-                                .one {
-                                    float: left;
-                                    text-align: left;
-                                    
-                                }
-                                .two {
-                                    float: right;
-                                    text-align: right;
-                                    font-weight: bold;
-                                }
-                            }
-                        }
-                          
                         input {
                             display: none;
                         }
@@ -599,7 +419,7 @@ body {
 
                 a {
                     font-size: 1.8em;
-                    color: yellow;
+                    color: #ffff00;
                     text-decoration: none;
                     text-shadow: $text-shadow;
                     text-transform: uppercase;
@@ -607,13 +427,13 @@ body {
                 }
 
                 h2 {
-                    color: white;
+                    color: #fff;
                     font-weight: 200;
                     text-align: center;
                 }
 
                 p {
-                    color: white;
+                    color: #fff;
                     text-align: center;
 
                     @include tablet {
@@ -802,7 +622,7 @@ body {
                     writing-mode:tb-rl;
                     -webkit-transform: rotate(180deg);
                     text-transform: uppercase;
-                    color: black;
+                    color: #000;
                     font-weight: 500;
                     letter-spacing: 2px;
                     font-size: 0.7em;

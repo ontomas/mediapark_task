@@ -240,7 +240,7 @@ body main #showcase .background-right .sideway {
           writing-mode: tb-rl;
   -webkit-transform: rotate(180deg);
   text-transform: uppercase;
-  color: black;
+  color: #000;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 0.7em;
@@ -311,190 +311,28 @@ body main #location .background .navigation .loc-nav section {
   width: 100%;
 }
 
-body main #location .background .navigation .loc-nav #content1 h3 {
+body main #location .background .navigation .loc-nav #content1 h3, body main #location .background .navigation .loc-nav #content2 h3, body main #location .background .navigation .loc-nav #content3 h3, body main #location .background .navigation .loc-nav #content4 h3, body main #location .background .navigation .loc-nav #content5 h3, body main #location .background .navigation .loc-nav #content6 h3, body main #location .background .navigation .loc-nav #content7 h3 {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
-body main #location .background .navigation .loc-nav #content1 ul {
+body main #location .background .navigation .loc-nav #content1 ul, body main #location .background .navigation .loc-nav #content2 ul, body main #location .background .navigation .loc-nav #content3 ul, body main #location .background .navigation .loc-nav #content4 ul, body main #location .background .navigation .loc-nav #content5 ul, body main #location .background .navigation .loc-nav #content6 ul, body main #location .background .navigation .loc-nav #content7 ul {
   list-style-type: none;
 }
 
-body main #location .background .navigation .loc-nav #content1 ul li {
+body main #location .background .navigation .loc-nav #content1 ul li, body main #location .background .navigation .loc-nav #content2 ul li, body main #location .background .navigation .loc-nav #content3 ul li, body main #location .background .navigation .loc-nav #content4 ul li, body main #location .background .navigation .loc-nav #content5 ul li, body main #location .background .navigation .loc-nav #content6 ul li, body main #location .background .navigation .loc-nav #content7 ul li {
   padding: 20px 0 40px 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
 }
 
-body main #location .background .navigation .loc-nav #content1 ul .one {
+body main #location .background .navigation .loc-nav #content1 ul .one, body main #location .background .navigation .loc-nav #content2 ul .one, body main #location .background .navigation .loc-nav #content3 ul .one, body main #location .background .navigation .loc-nav #content4 ul .one, body main #location .background .navigation .loc-nav #content5 ul .one, body main #location .background .navigation .loc-nav #content6 ul .one, body main #location .background .navigation .loc-nav #content7 ul .one {
   float: left;
   text-align: left;
 }
 
-body main #location .background .navigation .loc-nav #content1 ul .two {
-  float: right;
-  text-align: right;
-  font-weight: bold;
-}
-
-body main #location .background .navigation .loc-nav #content2 h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-body main #location .background .navigation .loc-nav #content2 ul {
-  list-style-type: none;
-}
-
-body main #location .background .navigation .loc-nav #content2 ul li {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid black;
-}
-
-body main #location .background .navigation .loc-nav #content2 ul .one {
-  float: left;
-  text-align: left;
-}
-
-body main #location .background .navigation .loc-nav #content2 ul .two {
-  float: right;
-  text-align: right;
-  font-weight: bold;
-}
-
-body main #location .background .navigation .loc-nav #content3 h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-body main #location .background .navigation .loc-nav #content3 ul {
-  list-style-type: none;
-}
-
-body main #location .background .navigation .loc-nav #content3 ul li {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid black;
-}
-
-body main #location .background .navigation .loc-nav #content3 ul .one {
-  float: left;
-  text-align: left;
-}
-
-body main #location .background .navigation .loc-nav #content3 ul .two {
-  float: right;
-  text-align: right;
-  font-weight: bold;
-}
-
-body main #location .background .navigation .loc-nav #content4 h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-body main #location .background .navigation .loc-nav #content4 ul {
-  list-style-type: none;
-}
-
-body main #location .background .navigation .loc-nav #content4 ul li {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid black;
-}
-
-body main #location .background .navigation .loc-nav #content4 ul .one {
-  float: left;
-  text-align: left;
-}
-
-body main #location .background .navigation .loc-nav #content4 ul .two {
-  float: right;
-  text-align: right;
-  font-weight: bold;
-}
-
-body main #location .background .navigation .loc-nav #content5 h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-body main #location .background .navigation .loc-nav #content5 ul {
-  list-style-type: none;
-}
-
-body main #location .background .navigation .loc-nav #content5 ul li {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid black;
-}
-
-body main #location .background .navigation .loc-nav #content5 ul .one {
-  float: left;
-  text-align: left;
-}
-
-body main #location .background .navigation .loc-nav #content5 ul .two {
-  float: right;
-  text-align: right;
-  font-weight: bold;
-}
-
-body main #location .background .navigation .loc-nav #content6 h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-body main #location .background .navigation .loc-nav #content6 ul {
-  list-style-type: none;
-}
-
-body main #location .background .navigation .loc-nav #content6 ul li {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid black;
-}
-
-body main #location .background .navigation .loc-nav #content6 ul .one {
-  float: left;
-  text-align: left;
-}
-
-body main #location .background .navigation .loc-nav #content6 ul .two {
-  float: right;
-  text-align: right;
-  font-weight: bold;
-}
-
-body main #location .background .navigation .loc-nav #content7 h3 {
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-body main #location .background .navigation .loc-nav #content7 ul {
-  list-style-type: none;
-}
-
-body main #location .background .navigation .loc-nav #content7 ul li {
-  padding: 20px 0 40px 0;
-  border-bottom: 1px solid black;
-}
-
-body main #location .background .navigation .loc-nav #content7 ul .one {
-  float: left;
-  text-align: left;
-}
-
-body main #location .background .navigation .loc-nav #content7 ul .two {
+body main #location .background .navigation .loc-nav #content1 ul .two, body main #location .background .navigation .loc-nav #content2 ul .two, body main #location .background .navigation .loc-nav #content3 ul .two, body main #location .background .navigation .loc-nav #content4 ul .two, body main #location .background .navigation .loc-nav #content5 ul .two, body main #location .background .navigation .loc-nav #content6 ul .two, body main #location .background .navigation .loc-nav #content7 ul .two {
   float: right;
   text-align: right;
   font-weight: bold;
@@ -612,7 +450,7 @@ body main #about .about-content {
 
 body main #about .about-content a {
   font-size: 1.8em;
-  color: yellow;
+  color: #ffff00;
   text-decoration: none;
   text-shadow: 1px 1px 2px #000000;
   text-transform: uppercase;
@@ -620,13 +458,13 @@ body main #about .about-content a {
 }
 
 body main #about .about-content h2 {
-  color: white;
+  color: #fff;
   font-weight: 200;
   text-align: center;
 }
 
 body main #about .about-content p {
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
@@ -849,7 +687,7 @@ body main #contacts .background-left .sideway {
           writing-mode: tb-rl;
   -webkit-transform: rotate(180deg);
   text-transform: uppercase;
-  color: black;
+  color: #000;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 0.7em;
