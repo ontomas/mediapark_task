@@ -1,2 +1,2 @@
 # mediapark_task
-![siuntu_tarnyba screenshot](https://github.com/ontomas/siuntu-tarnyba/blob/master/img/screenshot.png)
+![screenshot](https://github.com/ontomas/mediapark_task/blob/master/img/screenshot.png)
